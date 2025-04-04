@@ -1,4 +1,5 @@
 import { Response, Request, NextFunction } from 'express';
+import { getAllUsers } from '../services/userService';
 
 export const getUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
